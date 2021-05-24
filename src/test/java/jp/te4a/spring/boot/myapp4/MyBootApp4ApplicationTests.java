@@ -1,13 +1,20 @@
 package jp.te4a.spring.boot.myapp4;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@SpringBootTest
-class MyBootApp4ApplicationTests {
+import org.junit.jupiter.api.Test;
+
+
+
+public class MyBootApp4ApplicationTests {
 
 	@Test
-	void contextLoads() {
-	}
+    public void test_text()
+    {
+    String text = "this is Spring Boot sample.";
+    HelloController helloController = new HelloController();
+    String actual = helloController.index();
+    assertEquals(text,actual);
+    }
 
 }
