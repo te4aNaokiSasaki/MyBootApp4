@@ -4,6 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
+import jp.te4a.spring.boot.myapp5.HelloController;
+
 
 
 public class MyBootApp4ApplicationTests {
